@@ -1,4 +1,19 @@
-<!-- Generated template for the ImgViewerComponent component -->
-<div>
-  {{text}}
-</div>
+
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <button ion-button color="light"> <ion-icon slot="icon-only" name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- <ion-content [forceOverscroll]="false" color="dark" fullscreen="true"> -->
+<ion-content class="img-wrapper"  fullscreen="true">
+  <!-- <ion-slides [options]="slideOpts"> -->
+  <ion-slides>
+    <ion-slide>
+      <div class="swiper-zoom-container"><img [src]="imgSource" height="100vh" /></div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

@@ -1,3 +1,23 @@
 img-viewer {
+  // z-index: 9999;
+  // ion-backdrop {
+  //   background-color: black;
+  //   left: 0;
+  //   top: 0;
+  //   position: absolute;
+  // }
 
+  .img-wrapper {
+    background-color: black;
+  }
+
+  .my-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+    top: 0;
+    left: 0;
+  }
 }

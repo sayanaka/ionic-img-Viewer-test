@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { ModalController } from "ionic-angular/components/modal/modal-controller";
 
 /**
  * Generated class for the ImgViewerComponent component.
@@ -7,16 +8,15 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'img-viewer',
-  templateUrl: 'img-viewer.html'
+  selector: "img-viewer",
+  templateUrl: "img-viewer.html"
 })
 export class ImgViewerComponent {
+  imgSource: string = "https://placehold.jp/600x150.png";
 
-  text: string;
+  constructor(public modalCtrl: ModalController) {}
 
-  constructor() {
-    console.log('Hello ImgViewerComponent Component');
-    this.text = 'Hello World';
+  closeModal() {
+    // this.modalController.dismiss();
   }
-
 }
