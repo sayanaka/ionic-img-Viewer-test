@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { ModalController } from "ionic-angular/components/modal/modal-controller";
+import { ViewController } from "ionic-angular";
+// import { ModalController } from "ionic-angular/components/modal/modal-controller";
 
 /**
  * Generated class for the ImgViewerComponent component.
@@ -14,9 +15,9 @@ import { ModalController } from "ionic-angular/components/modal/modal-controller
 export class ImgViewerComponent {
   imgSource: string = "https://placehold.jp/600x150.png";
 
-  constructor(public modalCtrl: ModalController) {}
+  constructor(public viewCtrl: ViewController) {}
 
   closeModal() {
-    // this.modalController.dismiss();
+    this.viewCtrl.dismiss();
   }
 }
