@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { ViewController } from "ionic-angular";
 // import { ModalController } from "ionic-angular/components/modal/modal-controller";
 
@@ -13,7 +13,7 @@ import { ViewController } from "ionic-angular";
   templateUrl: "img-viewer.html"
 })
 export class ImgViewerComponent {
-  imgSource: string = "https://placehold.jp/600x150.png";
+  imgSource: string;
 
   constructor(public viewCtrl: ViewController) {}
 
