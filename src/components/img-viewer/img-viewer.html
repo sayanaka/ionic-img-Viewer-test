@@ -13,7 +13,9 @@
   <!-- <ion-slides [options]="slideOpts"> -->
   <ion-slides zoom="true">
     <ion-slide>
-      <div class="swiper-zoom-container"><img [src]="imgSource" height="100vh" /></div>
+      <div class="swiper-zoom-container" #imgWrapper>
+        <!-- <img [src]="imgSource" height="100vh" (click)="imgClick()"/> -->
+      </div>
     </ion-slide>
   </ion-slides>
 </ion-content>

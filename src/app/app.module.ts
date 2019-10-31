@@ -7,6 +7,7 @@ import { StatusBar } from "@ionic-native/status-bar";
 import { MyApp } from "./app.component";
 import { HomePage } from "../pages/home/home";
 import { ComponentsModule } from "../components/components.module";
+import { ImageViewerControllerProvider } from '../providers/image-viewer-controller/image-viewer-controller';
 
 @NgModule({
   declarations: [MyApp, HomePage],
@@ -16,7 +17,8 @@ import { ComponentsModule } from "../components/components.module";
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    ImageViewerControllerProvider
   ]
 })
 export class AppModule {}
